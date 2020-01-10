@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +38,8 @@
         $('#chat').submit(function(event){
             event.preventDefault();
 
-            var author = $('input[name=username]').val();
-            var message = $('input[name=message]').val();
+            const author = $('input[name=username]').val();
+            const message = $('input[name=message]').val();
 
             if (author.length && message.length) {
                 var messageObject = {
